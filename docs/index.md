@@ -7,12 +7,12 @@ Gastos DF é um projeto em desenvolvimento na disciplina de Métodos de Desenvol
 ### Impacto Esperado
 Gastos DF visa ser uma ferramenta essencial para promover a transparência e a responsabilidade no uso dos recursos públicos no Distrito Federal. Ao tornar os dados de despesas governamentais mais acessíveis e compreensíveis, esperamos engajar a população e estimular uma maior participação cidadã no monitoramento das finanças públicas.
 
-## Objetivos do Projeto
+## 🎯 Objetivos do Projeto
 1. **Transparência**: Facilitar o acesso aos dados públicos sobre os maiores gastos do governo distrital, promovendo a transparência nas finanças públicas.
 2. **Organização**: Categorização dos gastos por tipo (dividido por secretárias) para proporcionar uma visão detalhada e segmentada das despesas.
 3. **Acessibilidade**: Exibir os dados em uma plataforma amigável e intuitiva, acessível a todos os cidadãos interessados em acompanhar a aplicação dos recursos públicos.
 
-## Metodologia
+## 📋 Metodologia
 - **Extração de Dados**: Utilização de técnicas de web scraping e mineração de dados para extrair informações relevantes do diário oficial do Distrito Federal.
 - **Análise e Classificação**: Processamento e categorização dos dados extraídos para identificar e separar os maiores gastos por diferentes tipos, como saúde, educação, infraestrutura, entre outros.
 - **Desenvolvimento Web**: Criação de um site interativo e responsivo onde os dados serão exibidos de forma gráfica e textual, facilitando a compreensão e a navegação.
@@ -27,7 +27,7 @@ Feito para comunicar o back-end com o front-end é em `Python` usando `Fast Api`
 O back-end é onde acontece o processamento de dados feito em `Python` e usando a api do Querido diário que por sua vez é feita em `Fast Api`.
 
 
-## Colaboradores
+## 🤝 Colaboradores
 
 <center>
 <table style="margin-left: auto; margin-right: auto;">

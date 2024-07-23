@@ -1,3 +1,0 @@
-# Tecnologias
-
-## adicionar depois
