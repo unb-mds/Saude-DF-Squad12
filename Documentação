@@ -1,0 +1,120 @@
+Documentação Gastos DF
+
+1. Informações Gerais
+Nome do Site
+Gastos DF
+
+Descrição do Site
+O principal objetivo deste projeto é oferecer transparência e acessibilidade aos gastos do governo distrital do Distrito Federal, extraindo e exibindo dados do diário oficial de forma clara e organizada em uma web page. Buscamos engajar a população e estimular uma maior participação cidadã no monitoramento das finanças públicas.
+
+Objetivo do Site
+Oferecer transparência aos gastos do governo distrital do Distrito Federal.
+Engajar a população e estimular a participação cidadã no monitoramento das finanças públicas.
+Público-alvo
+Cidadãos preocupados com os gastos no Distrito Federal.
+
+2. Tecnologias e Ferramentas Usadas
+Linguagens de Programação
+Back-end: Python
+Front-end: TypeScript, HTML, CSS
+Frameworks e Bibliotecas
+Back-end: FastAPI, BaseModel
+Front-end: (não especificado)
+API: API do Querido Diário
+
+3. Estrutura do Site
+Arquitetura Geral
+O site é responsivo e exibe gráficos detalhados, permitindo ao usuário filtrar os dados conforme desejado.
+
+Principais Componentes/Módulos
+Front-end: Interface do usuário, gráficos interativos.
+Back-end: Extração e processamento de dados, integração com a API do Querido Diário.
+Fluxo de Dados
+O usuário acessa o site e escolhe os dados a serem exibidos.
+O back-end utiliza a API do Querido Diário para buscar os dados solicitados.
+Os dados são processados e enviados para o front-end.
+O front-end exibe os dados em gráficos interativos, permitindo ao usuário filtrar e visualizar diferentes categorias.
+4. Funcionalidades
+Funcionalidades Principais
+Exibição de Gráficos: Os usuários podem visualizar dados em gráficos de barras ou pizzas.
+
+4. Funcionalidades
+Funcionalidades Principais
+Exibição de Gráficos: Os usuários podem visualizar dados em gráficos de barras ou pizzas.
+Filtragem de Dados: Os usuários podem filtrar os dados por categorias, como contratos de serviços, compra de bens, compra de itens, dados de dívidas públicas e gastos com instituições distritais.
+Funcionalidades Secundárias
+Opção de Download: Possibilidade de download dos gráficos em formato PDF ou imagem.
+Comparação de Dados: Ferramenta para comparar diferentes categorias de gastos ao longo do tempo.
+Funcionalidades Planejadas
+Alertas de Gastos: Notificações para os usuários sobre novos gastos publicados no diário oficial.
+Análise Avançada: Ferramentas para análise detalhada e previsões baseadas nos dados históricos.
+5. Configuração e Instalação
+Requisitos de Sistema
+Não há requisitos específicos de sistema para os usuários finais. O site pode ser acessado diretamente via navegador web.
+
+Passos de Instalação
+Não é necessário nenhum processo de instalação. Basta acessar o link do site e começar a utilizar.
+
+Configuração Inicial
+Ao acessar o site pela primeira vez, o usuário poderá optar por configurar preferências de exibição, como tipo de gráfico preferido (barras ou pizzas).
+
+6. Guia do Usuário
+Interface do Usuário
+Tela Inicial: Exibe o nome do site "Gastos DF" e um menu de navegação.
+Painel de Controle: Área onde o usuário escolhe os dados a serem exibidos nos gráficos.
+Área de Gráficos: Espaço onde os gráficos são exibidos, com opções para alternar entre gráficos de barras e pizzas.
+Navegação
+Menu Principal: Acesso às diferentes seções do site (Início, Sobre, Contato).
+Filtros de Dados: Opções para selecionar categorias específicas de gastos.
+Exibição de Gráficos: Botões para alternar entre diferentes tipos de gráficos.
+Como Usar as Funcionalidades
+Selecionar Categoria de Dados: No painel de controle, escolha uma ou mais categorias (contratos de serviços, compra de bens, etc.).
+Escolher Tipo de Gráfico: Selecione entre gráfico de barras ou pizzas.
+Visualizar Gráfico: Os gráficos são atualizados automaticamente com base nas seleções feitas.
+
+7. Guia de Desenvolvimento
+Padrões de Codificação
+Python: Seguir as convenções do PEP 8 para código Python.
+TypeScript: Usar práticas recomendadas de codificação e linters para manter a qualidade do código.
+Guia para Contribuição
+Clonar o Repositório: git clone <url-do-repositório>
+Criar um Branch: git checkout -b nome-do-branch
+Fazer Commit das Mudanças: git commit -m "Descrição das mudanças"
+Enviar as Mudanças: git push origin nome-do-branch
+Criar um Pull Request: Submeter um pull request detalhando as alterações.
+Testes e Depuração
+Testes Automatizados: Utilizar frameworks como pytest para Python e Jest para TypeScript.
+Debugging: Ferramentas integradas nos IDEs como VS Code e PyCharm.
+
+8. API
+Descrição das Endpoints
+GET /dados: Retorna dados filtrados conforme parâmetros enviados.
+GET /dados/{categoria}: Retorna dados específicos de uma categoria.
+Parâmetros de Entrada e Saída
+Entrada: Parâmetros de filtragem como categoria, data inicial e data final.
+Saída: Dados estruturados em JSON para exibição nos gráficos.
+Exemplos de Uso
+Requisição: GET /dados?categoria=contratos&data_inicio=2023-01-01&data_fim=2023-12-31
+Resposta:
+json
+Copiar código
+{
+  "categoria": "contratos",
+  "data_inicio": "2023-01-01",
+  "data_fim": "2023-12-31",
+  "dados": [ ... ]
+}
+Mensagens de Erro
+404 Not Found: Quando a categoria solicitada não é encontrada.
+500 Internal Server Error: Erro genérico do servidor.
+
+9. FAQ e Solução de Problemas
+Perguntas Frequentes
+Como posso filtrar os dados?
+Utilize o painel de controle para selecionar as categorias e datas desejadas.
+Posso exportar os gráficos?
+Sim, há uma opção para exportar os gráficos em formato PDF ou imagem.
+Soluções para Problemas Comuns
+Os dados não estão carregando.
+Verifique sua conexão de internet e tente recarregar a página.
+Erro 404 ao buscar dados.
